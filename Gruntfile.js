@@ -20,7 +20,7 @@ module.exports = function(grunt){
         },
     dist: {
       files: {
-        'css/style.css': 'main.scss'
+        'css/style.css': 'style.scss'
       }
     }
   },
@@ -29,12 +29,40 @@ module.exports = function(grunt){
     files:  [{
       expand: true,
       cwd: 'css',
-      src: '*.css',
+      src: 'style.css',
       dest: 'css/',
       ext: '.min.css'
     }]
   }
 },
+
+uglify: {
+    my_target: {
+      files: {
+        'js/app.min.js': ['js/app.js']
+      }
+    }
+  },
+
+  imagemin: {
+    dist: {
+      options: {
+        optimizationLevel: 7
+      },
+      files: [
+        {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: 'img-raw',
+          src: ['*.{png,jpg,svg}'],
+          // Could also match cwd line above. i.e. project-directory/img/
+          dest: 'img/',
+        }
+      ]
+    },
+  },
+
   connect: {
     server: {
       options: {
@@ -56,5 +84,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('server',[  'connect', 'cssmin', 'watch' ]);
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.registerTask('server',[  'connect', 'cssmin', 'uglify', 'watch', 'imagemin' ]);
   };
