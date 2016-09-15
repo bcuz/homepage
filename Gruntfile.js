@@ -9,7 +9,7 @@ module.exports = function(grunt){
       },
       // files:['site/**'],
       files:['*.html', '*.scss', '*.css', 'js/**'],
-      tasks:['sass']
+      tasks:['sass', 'uglify', 'cssmin']
       // spawn: false
 
     },
@@ -54,7 +54,7 @@ uglify: {
           // Set to true to enable the following options…
           expand: true,
           // cwd is 'current working directory'
-          cwd: 'img-raw',
+          cwd: 'raw-img',
           src: ['*.{png,jpg,svg}'],
           // Could also match cwd line above. i.e. project-directory/img/
           dest: 'img/',
@@ -86,5 +86,5 @@ uglify: {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.registerTask('server',[  'connect', 'cssmin', 'uglify', 'watch', 'imagemin' ]);
+  grunt.registerTask('server',[  'connect', 'watch', 'imagemin' ]);
   };
