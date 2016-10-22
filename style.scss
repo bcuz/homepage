@@ -33,10 +33,6 @@
 }
 
 @media (max-width: 700px) {
-  // dont need this if i have the background body solid color
-  .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
-  }
 
   .fullscreen-bg__video {
     display: none;
