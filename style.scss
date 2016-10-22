@@ -41,7 +41,6 @@
 
 body {
   color: #fff;
-  background-color: #4138A8;
 }
 
 nav {
@@ -67,10 +66,25 @@ nav {
 
 header {
   height: 800px;
-  background-color: rgba(146,164,251, 0.7);
+  background-color: rgb(146,164,251);
 }
 
 section {
   height: 500px;
+  background-color: rgb(65,56,168);
+}
+
+
+@media screen and (min-width:  700px) {
+  /* remember to change max/min 1024 */
+  header {
+  background-color: rgba(146,164,251, 0.7);
+
+  }
+
+  section {
   background-color: rgba(65,56,168, 0.5);
+
+  }
+
 }
