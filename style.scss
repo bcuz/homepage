@@ -1,29 +1,45 @@
 @import "grid";
 
-/*
- * Hello!
- * Here is how you would write responsive styles if you chose NOT to use a grid system.
- * If you'd like to use a grid system I'd recommend using one of the following:
- * 1. http://getskeleton.com/
- * 2. http://neat.bourbon.io/
- * 3. http://susy.oddbird.net/
- * When you are writing these styles, remember to write all of your base/mobile styles
- * first.
- * Then write your styles for your next larger "breakpoint" (screen width).
- * Then write your styles for your largest "breakpoint".
- * You can have as many breakpoints defined as you like - most developers use 3 or
-  4 that correspond with comminly used device-widths that they plan to support.
- * Use the internet as a resource when you need information!
- * See notes below. ***
- */
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
 
-.example-style1 {
- /*
-  * Styles for mobile size 320 and larger
-  * These are your base styles
-  * Write these styles first
-  */
-  color: red;
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
 }
 
 @media (min-width: 700px) {
