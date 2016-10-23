@@ -44,6 +44,8 @@ body {
 }
 
 nav {
+  display: none;
+
   li {
     display: inline;
     padding: 12px 7px;
@@ -118,6 +120,10 @@ section {
 
 @media screen and (min-width:  700px) {
   /* remember to change max/min 1024 */
+  nav {
+    display: block;
+  }
+
   header {
   background-color: rgba(146,164,251, 0.7);
 
