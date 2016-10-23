@@ -77,13 +77,21 @@ header {
 
   .form-control {
     color: #000;
+    height: 45px;
   }
 
   .input-group {
-    max-width: 400px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+  }
 
+  h2 {
+    margin: 1em 0;
+  }
+
+  .input-group-addon {
+    text-transform: uppercase;
   }
 
   .input-group-addon:hover {
