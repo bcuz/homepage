@@ -54,6 +54,7 @@ nav {
   li:hover {
     color: #000;
     background-color: #fff;
+    transition: background-color .7s;
     opacity: 0.5;
     cursor: pointer;
   }
