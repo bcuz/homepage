@@ -67,6 +67,13 @@ nav {
 header {
   height: 800px;
   background-color: rgb(146,164,251);
+
+  img {
+    // doesnt make sense that its not moving here...
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 section {
