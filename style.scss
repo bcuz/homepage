@@ -75,10 +75,20 @@ header {
     margin-right: auto;
   }
 
-  input {
+  .form-control {
     color: #000;
   }
 
+  .input-group {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .input-group-addon:hover {
+    cursor: pointer;
+  }
 
   .col-md-12 {
     text-align: center;
