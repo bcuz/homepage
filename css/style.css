@@ -1172,7 +1172,9 @@ header nav {
     float: right;
     margin: 0.8em 0.1em 1em; }
 
-header, section:nth-child(4), footer {
+header,
+section:nth-child(4),
+footer {
   background-color: #92a4fb; }
 
 .btn {
@@ -1254,7 +1256,8 @@ footer {
   background-color: initial;
   transition: 1s; }
 
-section:nth-child(3) .col-md-12, section:nth-child(4) .col-md-12 {
+section:nth-child(3) .col-md-12,
+section:nth-child(4) .col-md-12 {
   padding-top: 75px; }
 
 section:nth-child(4) img {
@@ -1278,7 +1281,9 @@ section:nth-child(4) p {
     width: 100%;
     display: block;
     height: 3.3em; }
-  header, section:nth-child(4), footer {
+  header,
+  section:nth-child(4),
+  footer {
     background-color: rgba(146, 164, 251, 0.7); }
   header .btn {
     display: inline-block;
