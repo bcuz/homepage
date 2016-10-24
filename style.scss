@@ -108,6 +108,7 @@ header {
   .input-group-addon:hover {
     cursor: pointer;
     background-color: #777;
+    transition: background-color .7s;
   }
 
   .input-group-addon:focus {
