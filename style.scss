@@ -100,10 +100,14 @@ header, section:nth-child(4) {
 header {
   height: 800px;
 
+  form {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
   .btn-email {
-    // display: inline;
+    display: block;
     // float: left;
-    margin-left: -5px;
   }
 
   img {
@@ -211,8 +215,19 @@ footer {
   header, section:nth-child(4) {
   background-color: rgba(146,164,251, 0.7);
 
-  }
 
+  }
+  header {
+    .btn-email {
+      display: inline-block;
+      margin-left: -5px;
+    }
+
+    form {
+      max-width: none;
+    }
+
+  }
   section {
   background-color: rgba(65,56,168, 0.5);
 
