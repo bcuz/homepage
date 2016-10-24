@@ -13,7 +13,7 @@ $(function() {
 
   $('.slider').unslider({
     arrows: false,
-    fluid: true
+    // fluid: true
   });
 
 });
