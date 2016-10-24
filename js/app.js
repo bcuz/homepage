@@ -11,9 +11,9 @@ $(function() {
   $(window).on('scroll', function() {
     console.log($(this).scrollTop());
     if ($(this).scrollTop() > 150) {
-      $("header nav").animate({backgroundColor: '#000'}, 50);
+      $("header nav").animate({backgroundColor: '#000'}, 40);
     } else {
-      $("header nav").animate({backgroundColor: 'rgba(0, 0, 0, 0)'}, 50);
+      $("header nav").animate({backgroundColor: 'rgba(0, 0, 0, 0)'}, 40);
     }
   })
 

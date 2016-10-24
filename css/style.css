@@ -1150,6 +1150,7 @@ td.visible-print {
     display: none; } }
 
 body {
+  font-family: 'Proza Libre', sans-serif;
   color: #fff; }
   body p {
     font-size: 1.3em; }
@@ -1159,7 +1160,7 @@ header nav {
   header nav li {
     font-size: 1.2em;
     display: inline;
-    padding: 12px; }
+    padding: 11px; }
   header nav li:hover {
     color: #000;
     background-color: #fff;
@@ -1182,7 +1183,8 @@ header, section:nth-child(4), footer {
   display: inline-block;
   margin-bottom: 30px;
   text-transform: uppercase;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-weight: bold; }
 
 .btn:hover {
   background-color: #777;
@@ -1199,6 +1201,9 @@ header {
   header form {
     max-width: 280px;
     margin: 0 auto; }
+  header input {
+    width: 100%;
+    padding-left: 10px; }
   header .btn {
     display: block; }
   header img {
@@ -1216,7 +1221,7 @@ header {
     text-align: center; }
 
 section {
-  height: 800px;
+  height: 750px;
   background-color: #4138a8;
   text-align: center; }
   section h2 {
@@ -1247,8 +1252,18 @@ footer {
   background-color: initial;
   transition: 1s; }
 
-section:nth-child(3) .col-md-12 {
+section:nth-child(3) .col-md-12, section:nth-child(4) .col-md-12 {
   padding-top: 75px; }
+
+section:nth-child(4) img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+section:nth-child(4) p {
+  max-width: 700px;
+  margin: 30px auto; }
 
 @media screen and (min-width: 700px) {
   /* remember to change max/min 1024 */
@@ -1268,6 +1283,8 @@ section:nth-child(3) .col-md-12 {
     margin-left: -5px; }
   header form {
     max-width: none; }
+  header input {
+    width: auto; }
   section {
     background-color: rgba(65, 56, 168, 0.5); } }
 
