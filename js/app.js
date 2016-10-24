@@ -6,7 +6,7 @@ $(function() {
     if ($(this).scrollTop() > 150) {
       $("header nav").addClass("fadeIn")
     } else {
-      // $("header nav").removeClass("fadeIn")
+      $("header nav").removeClass("fadeIn")
       // $("header nav").addClass("fadeOut")
     }
   })
