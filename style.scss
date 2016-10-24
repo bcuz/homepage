@@ -102,7 +102,8 @@ header {
 
   .btn-email {
     // display: inline;
-    float: left;
+    // float: left;
+    margin-left: -5px;
   }
 
   img {
@@ -115,7 +116,7 @@ header {
   .form-control {
     color: #000;
     height: 45px;
-    float: left;
+    // float: left;
   }
 
   .input-group {
@@ -150,6 +151,7 @@ header {
   .col-md-12 {
     text-align: center;
   }
+
 }
 
 
