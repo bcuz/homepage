@@ -2,8 +2,6 @@
 
 $(function() {
 
-  $('.banner').unslider({
-autoplay: true
-});
+  $('.banner').unslider();
 
 });
