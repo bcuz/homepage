@@ -12,7 +12,7 @@ $(function() {
   })
 
   $('.slider').unslider({
-    arrows: false,
+    arrows: false
     // fluid: true
   });
 
