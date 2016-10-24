@@ -114,6 +114,7 @@ header {
   }
 
   input {
+    width: 100%;
     padding-left: 10px;
   }
 
@@ -215,7 +216,6 @@ section:nth-child(4) {
 
 @media screen and (min-width:  700px) {
 
-
   /* remember to change max/min 1024 */
   header nav {
     position: fixed;
@@ -226,6 +226,8 @@ section:nth-child(4) {
     width: 100%;
     display: block;
     height: 3.3em;
+
+
   }
 
   header, section:nth-child(4), footer {
@@ -242,6 +244,10 @@ section:nth-child(4) {
     form {
       max-width: none;
     }
+
+     input {
+    width: auto;
+  }
 
   }
   section {
