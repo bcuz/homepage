@@ -2,7 +2,7 @@
 
 $(function() {
 
-  $('.banner').unslider({
+  $('.slider').unslider({
     arrows: false
   });
 
