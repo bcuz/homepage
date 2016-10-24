@@ -139,6 +139,11 @@ footer {
   background-color: #C5C5C5;
 }
 
+.fadeIn {
+  background-color: #000;
+  transition: 0.7s;
+}
+
 
 @media screen and (min-width:  700px) {
   /* remember to change max/min 1024 */
@@ -151,7 +156,6 @@ footer {
     width: 100%;
     display: block;
     height: 4.3em;
-    background-color: #000;
   }
 
   header, section:nth-child(4) {
