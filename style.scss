@@ -40,6 +40,7 @@
 }
 
 body {
+    font-family: 'Proza Libre', sans-serif;
     color: #fff;
 
     p {
@@ -145,7 +146,7 @@ header {
 
 
 section {
-  height: 800px;
+  height: 750px;
   background-color: rgb(65,56,168);
   text-align: center;
 
@@ -193,6 +194,7 @@ footer {
 
 section:nth-child(3) .col-md-12, section:nth-child(4) .col-md-12{
   padding-top: 75px;
+
 }
 
 section:nth-child(4) {
