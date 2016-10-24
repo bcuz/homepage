@@ -3,7 +3,8 @@
 $(function() {
   $('.slider').unslider({
     arrows: false,
-    dots: true
+    dots: true,
+    speed: 500
     // fluid: true
   });
 
