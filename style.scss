@@ -145,6 +145,11 @@ footer {
   transition: 1s;
 }
 
+.fadeOut {
+  background-color: initial;
+  transition: 1s;
+}
+
 
 @media screen and (min-width:  700px) {
   /* remember to change max/min 1024 */
