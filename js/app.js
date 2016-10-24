@@ -4,7 +4,8 @@ $(function() {
   $('.slider').unslider({
     arrows: false,
     dots: true,
-    speed: 500
+    speed: 500,
+    autoplay: true
     // fluid: true
   });
 
