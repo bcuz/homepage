@@ -73,7 +73,7 @@ header, section:nth-child(4) {
 
 }
 
-.btn-email {
+.btn {
   background-color: #909090;
   text-decoration: none;
   color: #fff;
@@ -85,14 +85,14 @@ header, section:nth-child(4) {
   font-size: 1.2em;
 }
 
-.btn-email:hover {
+.btn:hover {
   background-color: #777;
   color: inherit;
   text-decoration: inherit;
   transition: background-color .7s;
 }
 
-.btn-email:focus {
+.btn:focus {
   color: #000;
   text-decoration: inherit;
 }
@@ -105,7 +105,7 @@ header {
     margin: 0 auto;
   }
 
-  .btn-email {
+  .btn {
     display: block;
   }
 
@@ -210,7 +210,7 @@ footer {
 
   }
   header {
-    .btn-email {
+    .btn {
       display: inline-block;
       margin-left: -5px;
     }
