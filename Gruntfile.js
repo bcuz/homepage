@@ -9,17 +9,10 @@ module.exports = function(grunt){
       },
       // files:['site/**'],
       files:['*.html', '*.scss', '*.css', 'js/**'],
-      tasks:['sass']
-      // tasks:['sass', 'jshint']
+      tasks:['sass', 'uglify', 'cssmin']
       // spawn: false
 
     },
-
-    // jshint: {
-    //   files: {
-    //     src: ['js/script.js']
-    //   },
-    // },
 
      sass: {
       options: {
@@ -31,6 +24,45 @@ module.exports = function(grunt){
       }
     }
   },
+  cssmin: {
+  target: {
+    files:  [{
+      expand: true,
+      cwd: 'css',
+      src: 'style.css',
+      dest: 'css/',
+      ext: '.min.css'
+    }]
+  }
+},
+
+uglify: {
+    my_target: {
+      files: {
+        'js/app.min.js': ['js/app.js']
+      }
+    }
+  },
+
+  imagemin: {
+    dist: {
+      options: {
+        optimizationLevel: 7
+      },
+      files: [
+        {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: 'raw-img',
+          src: ['*.{png,jpg,svg}'],
+          // Could also match cwd line above. i.e. project-directory/img/
+          dest: 'img/',
+        }
+      ]
+    },
+  },
+
   connect: {
     server: {
       options: {
@@ -49,8 +81,10 @@ module.exports = function(grunt){
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
-  // grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.registerTask('server',[  'connect', 'watch']);
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.registerTask('server',['connect', 'watch', 'imagemin']);
   };
