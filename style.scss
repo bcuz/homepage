@@ -123,6 +123,11 @@ section {
   }
 }
 
+.unslider-nav ol li {
+  width: 10px;
+  height: 10px;
+}
+
 
 @media screen and (min-width:  700px) {
   /* remember to change max/min 1024 */
