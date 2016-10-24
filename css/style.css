@@ -1119,50 +1119,156 @@ td.visible-print {
   td.hidden-print {
     display: none !important; } }
 
-/*
- * Hello!
- * Here is how you would write responsive styles if you chose NOT to use a grid system.
- * If you'd like to use a grid system I'd recommend using one of the following:
- * 1. http://getskeleton.com/
- * 2. http://neat.bourbon.io/
- * 3. http://susy.oddbird.net/
- * When you are writing these styles, remember to write all of your base/mobile styles
- * first.
- * Then write your styles for your next larger "breakpoint" (screen width).
- * Then write your styles for your largest "breakpoint".
- * You can have as many breakpoints defined as you like - most developers use 3 or
-  4 that correspond with comminly used device-widths that they plan to support.
- * Use the internet as a resource when you need information!
- * See notes below. ***
- */
-.example-style1 {
-  /*
-  * Styles for mobile size 320 and larger
-  * These are your base styles
-  * Write these styles first
-  */
-  color: red; }
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100; }
 
-@media (min-width: 700px) {
-  .example-style1 {
-    /*
-     * Styles for tablet size and larger here.
-     * Here is where you would overwrite any base styles that you want to change
-     * for this breakpoint.
-     * Base styles are inherited here so no need to repeat formerly defined base
-     * properties that will remain unchanged.
-     * Write these styles 2nd.
-     */ } }
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
-@media (min-width: 1024px) {
-  .example-style1 {
-    /*
-     * Styles for desktop size and larger here.
-     * Here is where you would overwrite your base and tablet-size styles
-     * that you want to change for this breakpoint.
-     * Base styles and your 700px breakpoint styles (your tablet styles) are inherited
-     * here so no need to repeat formerly defined properties that will remain unchanged.
-     * Write these styles 3rd.
-     */ } }
+@media (min-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%; } }
+
+@media (max-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%; } }
+
+@media (max-width: 700px) {
+  .fullscreen-bg__video {
+    display: none; } }
+
+body {
+  color: #fff; }
+  body p {
+    font-size: 1.3em; }
+
+header nav {
+  display: none; }
+  header nav li {
+    font-size: 1.2em;
+    display: inline;
+    padding: 12px; }
+  header nav li:hover {
+    color: #000;
+    background-color: #fff;
+    transition: background-color .7s;
+    opacity: 0.5;
+    cursor: pointer; }
+  header nav ul {
+    float: right;
+    margin: 0.8em 0.1em 1em; }
+
+header, section:nth-child(4), footer {
+  background-color: #92a4fb; }
+
+.btn {
+  background-color: #909090;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 1.2em; }
+
+.btn:hover {
+  background-color: #777;
+  color: inherit;
+  text-decoration: inherit;
+  transition: background-color .7s; }
+
+.btn:focus {
+  color: #000;
+  text-decoration: inherit; }
+
+header {
+  height: 800px; }
+  header form {
+    max-width: 280px;
+    margin: 0 auto; }
+  header .btn {
+    display: block; }
+  header img {
+    padding-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  header .form-control {
+    color: #000;
+    height: 45px; }
+  header h1 {
+    margin: 2em 0 1em;
+    font-size: 28px; }
+  header .col-md-12 {
+    text-align: center; }
+
+section {
+  height: 800px;
+  background-color: #4138a8;
+  text-align: center; }
+  section h2 {
+    font-size: 32px;
+    padding-top: 30px;
+    margin-top: 0; }
+  section .slider {
+    max-width: 500px;
+    margin: 0 auto; }
+    section .slider img {
+      border-radius: 10px; }
+
+.unslider-nav ol li {
+  width: 10px;
+  height: 10px; }
+
+footer {
+  text-align: center;
+  border-bottom: 20px solid #C5C5C5; }
+  footer p {
+    margin: 0; }
+
+.fadeIn {
+  background-color: #000;
+  transition: 1s; }
+
+.fadeOut {
+  background-color: initial;
+  transition: 1s; }
+
+section:nth-child(3) .col-md-12 {
+  padding-top: 75px; }
+
+@media screen and (min-width: 700px) {
+  /* remember to change max/min 1024 */
+  header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: block;
+    height: 3.3em; }
+  header, section:nth-child(4), footer {
+    background-color: rgba(146, 164, 251, 0.7); }
+  header .btn {
+    display: inline-block;
+    margin-left: -5px; }
+  header form {
+    max-width: none; }
+  section {
+    background-color: rgba(65, 56, 168, 0.5); } }
 
 /*# sourceMappingURL=style.css.map */
