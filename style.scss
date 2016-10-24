@@ -142,8 +142,10 @@ footer {
 
 @media screen and (min-width:  700px) {
   /* remember to change max/min 1024 */
-  nav {
+  header nav {
     display: block;
+    height: 4em;
+    // background-color: #000;
   }
 
   header, section:nth-child(4) {
