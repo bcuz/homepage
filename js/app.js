@@ -2,7 +2,8 @@
 
 $(function() {
   $('.slider').unslider({
-    arrows: false
+    arrows: false,
+    dots: true
     // fluid: true
   });
 
