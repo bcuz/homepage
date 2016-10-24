@@ -2,6 +2,8 @@
 
 $(function() {
 
-  $('.banner').unslider();
+  $('.banner').unslider({
+    arrows: false
+  });
 
 });
