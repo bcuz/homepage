@@ -2,4 +2,8 @@
 
 $(function() {
 
+  $('.banner').unslider({
+autoplay: true
+});
+
 });

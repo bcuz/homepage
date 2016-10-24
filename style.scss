@@ -116,6 +116,11 @@ header {
 section {
   height: 500px;
   background-color: rgb(65,56,168);
+
+  .banner {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -136,3 +141,4 @@ section {
   }
 
 }
+
