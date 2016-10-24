@@ -127,12 +127,37 @@ section {
   background-color: rgb(65,56,168);
   text-align: center;
 
+  a {
+    background-color: #909090;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+
+  a:hover {
+    background-color: #777;
+    color: inherit;
+    text-decoration: inherit;
+    transition: background-color .7s;
+  }
+
+  a:focus {
+    color: #000;
+    text-decoration: inherit;
+  }
+
   h2 {
     padding-top: 30px;
     margin-top: 0;
   }
 
   .slider {
+
     max-width: 500px;
     margin: 0 auto;
   }
