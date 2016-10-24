@@ -15,7 +15,8 @@ $(function() {
     }
   })
 
-  $("section btn").click(function(){
+  $("section .btn").click(function(){
+    // not slow enough!
     $('html,body').animate({ scrollTop: 0 }, 'slow');
   })
 });
