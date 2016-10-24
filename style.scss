@@ -149,7 +149,7 @@ section {
 
   .slider {
     max-width: 500px;
-    margin: 0 20px;
+    margin: 0 auto;
 
     img {
       border-radius: 10px;
@@ -215,9 +215,6 @@ footer {
   }
   section {
   background-color: rgba(65,56,168, 0.5);
-    .slider {
-    margin: 0 auto;
-  }
   }
 
 }
