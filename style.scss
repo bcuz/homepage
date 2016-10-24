@@ -1,4 +1,4 @@
-// @import "grid";
+@import "grid";
 
 .fullscreen-bg {
   position: fixed;
@@ -73,8 +73,37 @@ header, section:nth-child(4) {
 
 }
 
+.btn-email {
+  background-color: #909090;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.btn-email:hover {
+  background-color: #777;
+  color: inherit;
+  text-decoration: inherit;
+  transition: background-color .7s;
+}
+
+.btn-email:focus {
+  color: #000;
+  text-decoration: inherit;
+}
+
 header {
   height: 800px;
+
+  .btn-email {
+    // display: inline;
+    float: left;
+  }
 
   img {
     padding-top: 150px;
@@ -86,10 +115,11 @@ header {
   .form-control {
     color: #000;
     height: 45px;
+    float: left;
   }
 
   .input-group {
-    max-width: 500px;
+    // max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -122,34 +152,13 @@ header {
   }
 }
 
+
+
 section {
   height: 800px;
   background-color: rgb(65,56,168);
   text-align: center;
 
-  a {
-    background-color: #909090;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    display: inline-block;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    font-size: 1.2em;
-  }
-
-  a:hover {
-    background-color: #777;
-    color: inherit;
-    text-decoration: inherit;
-    transition: background-color .7s;
-  }
-
-  a:focus {
-    color: #000;
-    text-decoration: inherit;
-  }
 
   h2 {
     padding-top: 30px;
