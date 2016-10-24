@@ -68,7 +68,7 @@ nav {
 
 }
 
-header, section:nth-child(4) {
+header, section:nth-child(4), footer {
   background-color: rgb(146,164,251);
 
 }
@@ -160,6 +160,11 @@ section {
 footer {
   height: 20px;
   background-color: #C5C5C5;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
 }
 
 .fadeIn {
@@ -186,7 +191,7 @@ footer {
     height: 3.3em;
   }
 
-  header, section:nth-child(4) {
+  header, section:nth-child(4), footer {
   background-color: rgba(146,164,251, 0.7);
 
 
