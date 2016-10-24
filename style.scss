@@ -182,8 +182,12 @@ footer {
   transition: 1s;
 }
 
+section:nth-child(3) .col-md-12{
+  padding-top: 75px;
+}
 
 @media screen and (min-width:  700px) {
+
 
   /* remember to change max/min 1024 */
   header nav {
