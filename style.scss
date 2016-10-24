@@ -43,10 +43,10 @@ body {
     font-family: 'Proza Libre', sans-serif;
     color: #fff;
 
+  }
     p {
       font-size: 1.3em;
     }
-  }
 header {
 nav {
     display: none;
@@ -170,16 +170,18 @@ section {
 }
 
 .unslider-nav ol li {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
 }
 
 footer {
   text-align: center;
+
   border-bottom: 20px solid #C5C5C5;
 
   p {
     margin: 0;
+    font-size: 1em;
   }
 
 }
