@@ -125,9 +125,14 @@ header {
 section {
   height: 800px;
   background-color: rgb(65,56,168);
+  text-align: center;
+
+  h2 {
+    padding-top: 30px;
+    margin-top: 0;
+  }
 
   .slider {
-    text-align: center;
     max-width: 500px;
     margin: 0 auto;
   }

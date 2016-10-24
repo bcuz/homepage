@@ -1,6 +1,10 @@
 'use strict'
 
 $(function() {
+  $('.slider').unslider({
+    arrows: false
+    // fluid: true
+  });
 
   $(window).on('scroll', function() {
     if ($(this).scrollTop() > 150) {
@@ -11,9 +15,5 @@ $(function() {
     }
   })
 
-  $('.slider').unslider({
-    arrows: false
-    // fluid: true
-  });
 
 });
