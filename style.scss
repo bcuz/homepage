@@ -47,8 +47,9 @@ nav {
   display: none;
 
   li {
+    font-size: 1.2em;
     display: inline;
-    padding: 12px 7px;
+    padding: 12px;
   }
 
   li:hover {
@@ -62,7 +63,7 @@ nav {
 
   ul {
     float: right;
-    margin: 2em 1em 1em;
+    margin: 0.8em 0.1em 1em;
   }
 
 }
@@ -155,7 +156,7 @@ footer {
     z-index: 1000;
     width: 100%;
     display: block;
-    height: 4.3em;
+    height: 3.3em;
   }
 
   header, section:nth-child(4) {
