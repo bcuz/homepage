@@ -148,13 +148,12 @@ section {
   }
 
   .slider {
-
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 20px;
 
-    // img {
-    //   width:
-    // }
+    img {
+      border-radius: 10px;
+    }
   }
 }
 
@@ -185,6 +184,7 @@ footer {
 
 
 @media screen and (min-width:  700px) {
+
   /* remember to change max/min 1024 */
   header nav {
     position: fixed;
@@ -215,7 +215,9 @@ footer {
   }
   section {
   background-color: rgba(65,56,168, 0.5);
-
+    .slider {
+    margin: 0 auto;
+  }
   }
 
 }
