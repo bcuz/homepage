@@ -18,7 +18,6 @@ $(function() {
   });
 
   $("section .btn").click(function(){
-    // not slow enough!
     $('html,body').animate({ scrollTop: 0 }, 1000);
   });
 });
