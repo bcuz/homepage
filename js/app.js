@@ -6,7 +6,6 @@ $(function() {
     dots: true,
     speed: 500,
     autoplay: true
-    // fluid: true
   });
 
   $(window).on('scroll', function() {
@@ -18,7 +17,6 @@ $(function() {
   });
 
   $("section .btn").click(function(){
-    // not slow enough!
-    $('html,body').animate({ scrollTop: 0 }, 'slow');
+    $('html,body').animate({ scrollTop: 0 }, 1000);
   });
 });
