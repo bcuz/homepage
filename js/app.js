@@ -6,7 +6,6 @@ $(function() {
     dots: true,
     speed: 500,
     autoplay: true
-    // fluid: true
   });
 
   $(window).on('scroll', function() {
