@@ -108,6 +108,7 @@ header {
     input {
         width: 100%;
         padding-left: 10px;
+        border-radius: 5px;
     }
     .btn {
         display: block;
@@ -198,11 +199,6 @@ section:nth-child(4) {
         display: block;
         height: 3.3em;
     }
-    header,
-    section:nth-child(4),
-    footer {
-        background-color: rgba(146, 164, 251, 0.7);
-    }
     header {
         .btn {
             display: inline-block;
@@ -214,6 +210,16 @@ section:nth-child(4) {
         input {
             width: auto;
         }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* remember to change max/min 1024 */
+    header,
+    section:nth-child(4),
+    footer {
+        background-color: rgba(146, 164, 251, 0.7);
     }
     section {
         background-color: rgba(65, 56, 168, 0.5);
