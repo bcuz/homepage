@@ -1173,7 +1173,7 @@ header nav {
     margin: 0.8em 0.1em 1em; }
 
 header,
-section:nth-child(4),
+.additional-info,
 footer {
   background-color: #92a4fb; }
 
@@ -1221,11 +1221,11 @@ header {
   header h1 {
     margin: 2em 0 1em;
     font-size: 28px; }
-  header .col-md-12 {
+  header .intro {
     text-align: center; }
 
 section {
-  height: 750px;
+  height: 800px;
   background-color: #4138a8;
   text-align: center; }
   section h2 {
@@ -1254,16 +1254,16 @@ footer {
   transition: 1s; }
 
 .main-info .col-md-12,
-section:nth-child(4) .col-md-12 {
-  padding-top: 75px; }
+.additional-info .col-md-12 {
+  padding-top: 50px; }
 
-section:nth-child(4) img {
+.additional-info img {
   width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-section:nth-child(4) p {
+.additional-info p {
   max-width: 700px;
   margin: 30px auto; }
 
@@ -1289,7 +1289,7 @@ section:nth-child(4) p {
 @media screen and (min-width: 1024px) {
   /* remember to change max/min 1024 */
   header,
-  section:nth-child(4),
+  .additional-info,
   footer {
     background-color: rgba(146, 164, 251, 0.7); }
   section {
